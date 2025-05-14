@@ -11,4 +11,8 @@ app.use('/v1/role', require('./routes/role.routes'));
 app.use('/v1/community', require('./routes/community.routes'));
 app.use('/v1/member', require('./routes/member.routes'));
 
+app.get('/', (req, res) => {
+  res.send('Backend API is running!');
+});
+
 module.exports = app;
